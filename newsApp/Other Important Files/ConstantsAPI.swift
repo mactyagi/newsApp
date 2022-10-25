@@ -6,4 +6,4 @@
 //
 
 import Foundation
-public let baseURL = "https://newsapi.org/v2/everything?language=en&apiKey=1ba8dd68921e45d0860452a0ba248e8d"
+public let baseURL = "https://newsapi.org/v2/everything?language=en&apiKey=1ba8dd68921e45d0860452a0ba248e8d&sortBy=publishedAt"

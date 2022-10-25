@@ -14,10 +14,42 @@
             filePath = "newsApp/News Screen/View Model/NewsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "fetchTopHeadlinesNews(completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5D952177-FE17-45BC-808D-A0901A4629A1 - 54e3d51828874d9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in newsApp.NewsViewModel.fetchTopHeadlinesNews(completion: (Swift.Result&lt;Swift.Array&lt;newsApp.Article&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "newsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manukanttyagi/Desktop/newsApp/newsApp/News%20Screen/View%20Model/NewsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1276">
+               </Location>
+               <Location
+                  uuid = "5D952177-FE17-45BC-808D-A0901A4629A1 - 1327fc6f18fff012"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in newsAppTests.NewsViewModel.fetchTopHeadlinesNews(completion: (Swift.Result&lt;Swift.Array&lt;newsAppTests.Article&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "newsAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manukanttyagi/Desktop/newsApp/newsApp/News%20Screen/View%20Model/NewsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1276">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,10 +62,42 @@
             filePath = "newsApp/News Screen/View Model/NewsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "fetchTopHeadlinesNews(completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "90E5FA20-9E59-4EE7-A2DA-BE8810268DFA - 54e3d51828874d5a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in newsApp.NewsViewModel.fetchTopHeadlinesNews(completion: (Swift.Result&lt;Swift.Array&lt;newsApp.Article&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "newsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manukanttyagi/Desktop/newsApp/newsApp/News%20Screen/View%20Model/NewsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1604">
+               </Location>
+               <Location
+                  uuid = "90E5FA20-9E59-4EE7-A2DA-BE8810268DFA - 1327fc6f18fff0d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in newsAppTests.NewsViewModel.fetchTopHeadlinesNews(completion: (Swift.Result&lt;Swift.Array&lt;newsAppTests.Article&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "newsAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/manukanttyagi/Desktop/newsApp/newsApp/News%20Screen/View%20Model/NewsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1604">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

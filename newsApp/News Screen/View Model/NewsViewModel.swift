@@ -6,20 +6,24 @@
 //
 
 import Foundation
-class NewsViewModel{
-    var articles = [Articles]()
-    var page = 0
-    var searchString = "india"
+public class NewsViewModel{
+    var articles = [Article]()
+    var page = 1
+    var searchString = ""
     var totalArticles = 0
+    var isSearch: Bool{
+        searchString.count > 0
+    }
     
 }
 
 
 extension NewsViewModel{
-    func fetchTopHeadlinesNews(completion: @escaping(Result<[Articles], Error>)->()){
-        var extensionUrl = "&page=\(page)"
+    func fetchTopHeadlinesNews(completion: @escaping(Result<[Article], Error>)->()){
+        var extensionUrl = "&page=\(page)&q=india"
         if searchString.count > 0{
-            extensionUrl += "&q=\(searchString)"
+            searchString = searchString.replacingOccurrences(of: " ", with: "+")
+            extensionUrl += "+\(searchString)"
         }
         
         HTTPManager.shared.getAPI(urlString: baseURL + extensionUrl) { [weak self] result in
@@ -29,7 +33,11 @@ extension NewsViewModel{
                 let decoder = JSONDecoder()
                 do{
                     let parseData = try decoder.decode(NewsDataModel.self, from: data)
-                    self.articles += parseData.articles
+                    if self.page > 1{
+                        self.articles += parseData.articles
+                    }else{
+                        self.articles = parseData.articles
+                    }
                     self.totalArticles = parseData.totalResults
                     completion(.success(parseData.articles))
                     print(parseData)
@@ -44,5 +52,16 @@ extension NewsViewModel{
                 print(error)
             }
         }
+    }
+    
+    func changeDateToRemainTime(string: String) -> String{
+        let dateFormatter = DateFormatter()
+          dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+          dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        if let date = dateFormatter.date(from:string){
+            return Date().offset(from: date)
+        }
+        return ""
+        
     }
 }
